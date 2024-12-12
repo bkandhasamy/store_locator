@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "store_locator"
+version = "1.0.0"
+description = "FastAPI-based Delivery Location Query API"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Bhuvaneshwaran Kandhasamy", email = "bhuvanesh.kandhasamy@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi>=0.88",
+    "pydantic>=1.10",
+    "haversine>=2.7",
+    "pandas>=1.4",
+    "httpx>=0.23"
+]
+
+[tool.black]
+line-length = 80
+target-version = ["py311"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+[tool.flake8]
+max-line-length = 80
+
+[tool.coverage.report]
+show_missing = true
