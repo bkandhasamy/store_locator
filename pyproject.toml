@@ -1,3 +1,22 @@
+
+[tool.poetry]
+name = "store_locator"
+version = "1.0.0"
+
+[tool.poetry.include]
+include = [
+    "src/your_module/**",
+    "README.md",
+    "LICENSE"
+]
+
+[tool.poetry.exclude]
+exclude = [
+    "tests/**",
+    "*.pyc",
+    "__pycache__/**"
+]
+
 [build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"

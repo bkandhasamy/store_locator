@@ -22,8 +22,8 @@ PATCH version when you make backward compatible bug fixes
 - Type hints and docstrings
 - Semantic versioning and API versioning.
 
-### Fixed
+### Changed
 - N/A
 
-### Changed
+### Fixed
 - N/A
